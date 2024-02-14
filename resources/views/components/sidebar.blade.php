@@ -14,17 +14,17 @@
             </li>
             <li class="menu-header">Pages</li>
             <li class="{{ Request::is('users') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ url('users') }}">
+                <a class="nav-link" href="{{ route('users.index') }}">
                     <i class="fa-solid fa-user"></i><span>Users</span>
                 </a>
             </li>
-            <li class="{{ Request::is('category') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ url('category') }}">
+            <li class="{{ Request::is('categories') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('categories.index') }}">
                     <i class="fa-solid fa-layer-group"></i><span>Category</span>
                 </a>
             </li>
-            <li class="{{ Request::is('product') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ url('product') }}">
+            <li class="{{ Request::is('products') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('products.index') }}">
                     <i class="fa-solid fa-cube"></i><span>Product</span>
                 </a>
             </li>
