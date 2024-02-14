@@ -56,6 +56,7 @@
                                     <table class="table-striped table">
                                         <tr>
                                             <th>Name</th>
+                                            <th>Image</th>
                                             <th>Category</th>
                                             <th>Price</th>
                                             <th>Status</th>
@@ -66,6 +67,9 @@
                                             <tr>
                                                 <td>
                                                     {{ $product->name }}
+                                                </td>
+                                                <td>
+                                                    <img src=" {{ url($product->image) }}" width="50px">
                                                 </td>
                                                 <td>
                                                     {{ $product->category->name }}
