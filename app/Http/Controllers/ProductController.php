@@ -43,7 +43,6 @@ class ProductController extends Controller
         $product->stock = $request->stock;
         $product->status = $request->status;
         $product->is_favorite = $request->is_favorite;
-
         $product->save();
 
         if ($request->hasFile('image')) {
@@ -89,7 +88,6 @@ class ProductController extends Controller
         $product->stock = $request->stock;
         $product->status = $request->status;
         $product->is_favorite = $request->is_favorite;
-
         $product->save();
 
         if ($request->hasFile('image')) {

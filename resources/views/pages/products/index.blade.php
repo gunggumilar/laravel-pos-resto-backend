@@ -93,7 +93,8 @@
                                                             <input type="hidden" name="_method" value="DELETE">
                                                             <input type="hidden" name="_token"
                                                                 value="{{ csrf_token() }}">
-                                                            <button class="btn btn-sm btn-danger btn-icon confirm-delete">
+                                                            <button class="btn btn-sm btn-danger btn-icon confirm-delete"
+                                                                onclick="confirmDelete()">
                                                                 <i class="fas fa-times"></i> Delete
                                                             </button>
                                                         </form>
@@ -118,7 +119,6 @@
 @push('scripts')
     <!-- JS Libraies -->
     <script src="{{ asset('library/selectric/public/jquery.selectric.min.js') }}"></script>
-
     <!-- Page Specific JS File -->
     <script src="{{ asset('js/page/features-posts.js') }}"></script>
 @endpush
